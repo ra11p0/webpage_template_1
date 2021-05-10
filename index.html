@@ -2,7 +2,8 @@
     <html lang = "pl">
         <head>
             <title> Przemysław Leczewski </title>
-            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="main.css">
+            <link rel="stylesheet" href="photoRoll.css">
             <script src="js.js"></script>
         </head>
         <body>
@@ -19,7 +20,7 @@
             <div id = "content">
                 <div id="home">
                     <h2>Lorem ipsum dolor sit amet,</h2>
-                    <h3>consectetur adipiscing elit.</h3>
+                    <h3 style="text-align: left;">consectetur adipiscing elit.</h3>
                     <hr/>
                 </div>
                 <div id="about">
@@ -43,35 +44,33 @@
                     <hr/>
                 </div>
                 <div id = "quote">
-                    <h3 style = "text-align: left; margin-bottom: 0px;">Quisque dui lorem,</h3>
-                    <h3 style = "text-align: center;">commodo elit aliquet.</h3>
                 </div>
                 <div id="photos">
+                    <hr>
                     <h3>Zdjęcia.</h3>
                     <div id = "photoBooth">
-                        <div class = "photo" id = "photo1">
+                        <div class = "photo" id = "photo1" onclick = "showPhotoRoll(this);">
                              
                         </div>
-                        <div class = "photo" id = "photo2">
+                        <div class = "photo" id = "photo2" onclick = "showPhotoRoll(this);">
                              
                         </div>
-                        <div class = "photo" id = "photo3">
+                        <div class = "photo" id = "photo3" onclick = "showPhotoRoll(this);">
                              
                         </div>
-                        <div class = "photo" id = "photo4">
+                        <div class = "photo" id = "photo4" onclick = "showPhotoRoll(this);">
                              
                         </div>
-                        <div class = "photo" id = "photo5">
+                        <div class = "photo" id = "photo5" onclick = "showPhotoRoll(this);">
                              
                         </div>
-                        <div class = "photo" id = "photo6">
+                        <div class = "photo" id = "photo6" onclick = "showPhotoRoll(this);">
                              
                         </div>
                     </div>
                     <hr/>
                 </div>
                 <div id="contact">
-                    <h3>Kontakt</h3>
                     <table>
                         <tr>
                             <td>
@@ -103,14 +102,25 @@
                         </tr>
                         <tr>
                             <td colspan="4">
-                                <textarea style = "width: 100%; height: 200px;" aria-expanded="false">
-
-                                </textarea>
+                                <textarea style = "width: 100%; height: 250px; resize: none;"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <button>Wyślij!</button>
                             </td>
                         </tr>
                     </table>
                     <hr/>
                 </div>
+            </div>
+            <div id="photoRoll">
+                <div id = "closeButton" class="symbolButtons" onclick = "hidePhotoRoll();">r</div>
+                <div id = "prevPhoto" class="symbolButtons" onclick = "prevPhoto();">3</div>
+                <div id = "photoContainter">
+                    <image id = "photoField"src = "media/1.jpg"/>
+                </div>
+                <div id = "nextPhoto" class="symbolButtons" onclick = "nextPhoto();">4</div>
             </div>
         </body>
     </html>

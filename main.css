@@ -61,6 +61,7 @@ p{
 }
 h3{
     margin-top: 0px;
+    text-align: center;
     padding-top: 60px;
     font-size: 25pt;
     color: #f44336;
@@ -92,6 +93,7 @@ hr{
 }
 .photo:hover{
     opacity: 0.5;
+    cursor:pointer;
 }
 #photo1{
     background-image: url(media/1.jpg);
@@ -112,10 +114,11 @@ hr{
     background-image: url(media/6.jpg);
 }
 #quote{
-    width: 50%;
-    margin-left: 20%;
+    width:calc(100% - 405px);
+    margin-left: 360px;
     position: fixed;
-    bottom: 500px;
+    bottom: 550px;
+    left: 0px;
     z-index: -1;
     font-style: oblique;
 }
@@ -134,13 +137,13 @@ input{
     color: white;
 }
 button{
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     border-style: none;
+    margin-left: calc(50% - 45px);
     color: #eeeeee;
-    margin-top: 10px;
     border-radius: 12px;
-    width: 70px;
-    height: 20px;
+    width: 90px;
+    height: 40px;
 }
 td{
     padding: 15px;
@@ -149,6 +152,7 @@ table{
     margin: auto;
 }
 #contact{
+    margin-top: 300px;
     clear: both;
     
 }
