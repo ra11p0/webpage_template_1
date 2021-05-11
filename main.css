@@ -18,6 +18,7 @@ body{
     padding-bottom: 10px;
     width: 100%;
     transition: 100ms;
+    cursor: pointer;
 }
 .navbarButton:hover{
     width: 100%;
@@ -145,14 +146,13 @@ button{
     width: 90px;
     height: 40px;
 }
-td{
-    padding: 15px;
-}
 table{
     margin: auto;
 }
 #contact{
     margin-top: 300px;
     clear: both;
-    
+}
+#contact>table{
+    border-spacing: 15px;
 }

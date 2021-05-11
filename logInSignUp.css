@@ -1,0 +1,32 @@
+.loginSignup{
+    position: fixed;
+    font-family: sans-serif;
+    text-align: center;
+    color: #616161;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 270px;
+    border-radius: 10px;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+#logIn{
+    height: 210px;
+}
+#signUp{
+    height: 410px;
+}
+.loginSignup>h2{
+    text-align: left;
+}
+.loginSignup > button{
+    margin: 0px;
+    padding: 0px;
+}
+.loginSignup> .symbolButtons{
+    color: #616161;
+    font-size: 12pt;
+    position: relative;
+}

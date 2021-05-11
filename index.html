@@ -4,6 +4,7 @@
             <title> Przemysław Leczewski </title>
             <link rel="stylesheet" href="main.css">
             <link rel="stylesheet" href="photoRoll.css">
+            <link rel="stylesheet" href="logInSignUp.css">
             <script src="js.js"></script>
         </head>
         <body>
@@ -12,8 +13,8 @@
                 <nav>
                 <a href="#about"><div class = "navbarButton"> <h4>O nas</h4></div> </a>
                 <a href="#photos"><div class = "navbarButton"> <h4>Zdjęcia</h4></div> </a>
-                <a href="#register"><div class = "navbarButton"> <h4>Rejestracja</h4></div> </a>
-                <a href="#login"><div class = "navbarButton"> <h4>Logowanie</h4></div> </a>
+                <div class = "navbarButton" onclick = "showRegister();"> <h4>Rejestracja</h4></div>
+                <div class = "navbarButton" onclick = "showLogin();"> <h4>Logowanie</h4></div>
                 <a href="#contact"><div class = "navbarButton"> <h4>Kontakt</h4></div> </a>
                 </nav>
             </div>
@@ -121,6 +122,95 @@
                     <image id = "photoField"src = "media/1.jpg"/>
                 </div>
                 <div id = "nextPhoto" class="symbolButtons" onclick = "nextPhoto();">4</div>
+            </div>
+            <div id="logIn" class = "loginSignup">
+                <div id = "closeButton" class="symbolButtons" onclick = "hideLogin();">r</div>
+                <h2>Logowanie</h2>
+                <table>
+                    <tr>
+                        <td>
+                            Login:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hasło:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password"/>
+                        </td>
+                    </tr>
+                </table>
+                <button>Zaloguj.</button>
+            </div>
+            <div id="signUp" class = "loginSignup">
+                <div id = "closeButton" class="symbolButtons" onclick = "hideRegister();">r</div>
+                <h2>Rejestracja</h2>
+                <table>
+                    <tr>
+                        <td>
+                            Login:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hasło:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Potwierdź hasło:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Adres e-mail:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Potwierdź adres e-mail:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox"/> Akceptuję regulamin oraz warunki rejestracji.
+                        </td>
+                    </tr>
+                </table>
+                <button>Zarejestruj.</button>
             </div>
         </body>
     </html>
