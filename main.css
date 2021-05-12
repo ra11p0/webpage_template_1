@@ -130,12 +130,15 @@ hr{
     font-family: 'Times New Roman', Times, serif;
 }
 input{
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.2);
     border-style: none;
     height: 20px;
     border-radius: 12px;
     padding-left: 10px;
     color: white;
+}
+input:focus{
+    outline: none;
 }
 button{
     background: rgba(0, 0, 0, 0.4);
@@ -145,6 +148,9 @@ button{
     border-radius: 12px;
     width: 90px;
     height: 40px;
+}
+button:hover{
+    cursor: pointer;
 }
 table{
     margin: auto;

@@ -5,9 +5,8 @@
             <link rel="stylesheet" href="main.css">
             <link rel="stylesheet" href="photoRoll.css">
             <link rel="stylesheet" href="logInSignUp.css">
-            <script src="js.js"></script>
         </head>
-        <body>
+        <body onload="init()">
             <div class = "navbar">
                 <a href="#home"><h1>Lorem ipsum.</h1></a>
                 <nav>
@@ -92,13 +91,13 @@
                                 Mail:
                             </td>
                             <td>
-                                <input type="e-mail"/>
+                                <input type="e-mail" id = "sendMailEMail"/>
                             </td>
                             <td>
                                 Potwierdź mail:
                             </td>
                             <td>
-                                <input type="e-mail"/>
+                                <input type="e-mail" id = "sendMailEMailConfirm"/>
                             </td>
                         </tr>
                         <tr>
@@ -108,7 +107,7 @@
                         </tr>
                         <tr>
                             <td colspan="4">
-                                <button>Wyślij!</button>
+                                <button id = "sendMailButton">Wyślij!</button>
                             </td>
                         </tr>
                     </table>
@@ -148,7 +147,7 @@
                         </td>
                     </tr>
                 </table>
-                <button>Zaloguj.</button>
+                <button id = "loginButton">Zaloguj.</button>
             </div>
             <div id="signUp" class = "loginSignup">
                 <div id = "closeButton" class="symbolButtons" onclick = "hideRegister();">r</div>
@@ -161,7 +160,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="text"/>
+                            <input type="text" id = "registerLogin"/>
                         </td>
                     </tr>
                     <tr>
@@ -171,7 +170,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="password"/>
+                            <input type="password" id = "registerPassWd"/>
                         </td>
                     </tr>
                     <tr>
@@ -181,7 +180,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="password"/>
+                            <input type="password" id = "registerPassWdConfirm"/>
                         </td>
                     </tr>
                     <tr>
@@ -191,7 +190,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="email"/>
+                            <input type="email" id = "registerEmail"/>
                         </td>
                     </tr>
                     <tr>
@@ -201,16 +200,17 @@
                     </tr>
                     <tr>
                         <td>
-                            <input type="email"/>
+                            <input type="email" id = "registerEmailConfirm"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="checkbox"/> Akceptuję regulamin oraz warunki rejestracji.
+                            <input type="checkbox" id = "registerCheckBox"/> Akceptuję regulamin oraz warunki rejestracji.
                         </td>
                     </tr>
                 </table>
-                <button>Zarejestruj.</button>
+                <button id = "registerButton">Zarejestruj.</button>
             </div>
+            <script src="js.js"></script>
         </body>
     </html>
